@@ -88,8 +88,8 @@ namespace xaml_notepad
                 
 
                 }
-                CodeTextBox.Document.Blocks.Clear();
-            
+            this.Title = "XAML Notepad - " + filename;
+
         }
 
         private void OpenButton_Click(object sender, RoutedEventArgs e)
@@ -103,7 +103,7 @@ namespace xaml_notepad
                 FlowDocument content = new FlowDocument(new Paragraph(new Run(File.ReadAllText(og.FileName))));
                 CodeTextBox.Document = content;
                 filepath = Path.GetFullPath(og.FileName);
-
+                this.Title = "XAML Notepad - " + filename;
             }
             
         }
@@ -124,13 +124,18 @@ namespace xaml_notepad
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            if (filename != null)
+            {
 
-            
-            TextRange range = new TextRange(CodeTextBox.Document.ContentStart, CodeTextBox.Document.ContentEnd);
-            string codelines = range.Text;
-            MessageBox.Show("Saving to "+filepath,"Information",MessageBoxButton.OK,MessageBoxImage.Information);
-            
-            File.WriteAllText(filename, codelines);
+                TextRange range = new TextRange(CodeTextBox.Document.ContentStart, CodeTextBox.Document.ContentEnd);
+                string codelines = range.Text;
+                MessageBox.Show("Saving to " + filepath, "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+                File.WriteAllText(filename, codelines);
+            }
+            else
+                SaveAsButton_Click(sender,e);
+            this.Title = "XAML Notepad - " + filename;
+
         }
     }
 }

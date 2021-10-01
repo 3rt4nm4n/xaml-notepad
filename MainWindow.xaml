@@ -8,7 +8,7 @@
         Title="XAML Notepad" Height="460" Width="800" WindowStartupLocation="CenterScreen" Icon="C:\Users\nigbu\source\repos\xaml-notepad\xamlnotepadicon.png" SizeChanged="Window_SizeChanged">
 
     <Grid x:Name="myGrid">
-        <RichTextBox x:Name="CodeTextBox" HorizontalAlignment="Left" Height="355" Margin="165,47,0,0" VerticalAlignment="Top" Width="619" BorderThickness="2" FontFamily="Courier New" PreviewTextInput="CodeTextBox_PreviewTextInput" SelectionBrush="PaleVioletRed" TextChanged="CodeTextBox_TextChanged" xml:space="preserve">
+        <RichTextBox x:Name="CodeTextBox" HorizontalAlignment="Left" Height="355" Margin="165,47,0,0" VerticalAlignment="Top" Width="619" BorderThickness="2" FontFamily="Courier New" PreviewTextInput="CodeTextBox_PreviewTextInput" SelectionBrush="CornflowerBlue" TextChanged="CodeTextBox_TextChanged" xml:space="preserve">
             <FlowDocument/>
         </RichTextBox>
         <TreeView x:Name="XAMLTreeView" HorizontalAlignment="Left" Height="355" Margin="10,47,0,0" VerticalAlignment="Top" Width="150"/>

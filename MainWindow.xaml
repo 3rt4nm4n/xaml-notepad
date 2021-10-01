@@ -13,7 +13,7 @@
         </RichTextBox>
         <TreeView x:Name="XAMLTreeView" HorizontalAlignment="Left" Height="355" Margin="10,47,0,0" VerticalAlignment="Top" Width="150"/>
         <ToolBar x:Name="MyToolBar" HorizontalAlignment="Left" Height="37" Margin="10,5,0,0" VerticalAlignment="Top" Width="774">
-            <Button x:Name="NewButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="New File" Click="SaveAsButton_Click">
+            <Button x:Name="NewButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="New File" Click="NewButton_Click">
                 <StackPanel>
                     <Image Source="C:\Users\nigbu\source\repos\xaml-notepad\new-file-iconn.png" Height="32" Width="35"/>
                 </StackPanel>

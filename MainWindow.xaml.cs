@@ -71,7 +71,7 @@ namespace xaml_notepad
         {
              
                 Microsoft.Win32.SaveFileDialog dg = new Microsoft.Win32.SaveFileDialog();
-                dg.FileName = "Document";
+                dg.FileName = "new.xaml";
                 dg.DefaultExt = ".xaml";
                 dg.Filter = "eXtensible Markup Language .xaml|*.xaml";
                 Nullable<bool> result = dg.ShowDialog();
@@ -91,11 +91,12 @@ namespace xaml_notepad
 
         private void OpenButton_Click(object sender, RoutedEventArgs e)
         {
-            Microsoft.Win32.OpenFileDialog og = new Microsoft.Win32.OpenFileDialog();
             
+            Microsoft.Win32.OpenFileDialog og = new Microsoft.Win32.OpenFileDialog();
+           
             if (og.ShowDialog() == true)
             {
-
+                
                 FlowDocument content = new FlowDocument(new Paragraph(new Run(File.ReadAllText(og.FileName))));
                 CodeTextBox.Document = content;
                 filepath = Path.GetFullPath(og.FileName);
@@ -106,10 +107,12 @@ namespace xaml_notepad
 
         private void NewButton_Click(object sender, RoutedEventArgs e)
         {
-            var dr=MessageBox.Show("Would you like to save your file?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question);
-
+            
+            MessageBoxResult dr = MessageBox.Show("Would you like to save your file?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            
             if (dr == MessageBoxResult.Yes)
             {
+                
                 SaveAsButton_Click(sender, e);
                 CodeTextBox.Document.Blocks.Clear();
             }

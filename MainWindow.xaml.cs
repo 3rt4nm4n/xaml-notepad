@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.IO;
+using System.Windows.Controls.Primitives;
 
 namespace xaml_notepad
 {
@@ -136,6 +137,28 @@ namespace xaml_notepad
                 SaveAsButton_Click(sender,e);
             this.Title = "XAML Notepad - " + filename;
 
+        }
+
+        private void ListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var obj = (ToolBoxList.SelectedItem as ListBoxItem).Content.ToString();
+            
+            
+            if (obj != null)
+            {
+                switch (obj.ToString()) {
+                    case "Border":
+                        CodeTextBox.AppendText("<Border BorderBrush=\"Black\" BorderThickness=\"1\" HorizontalAlignment=\"Left\" Height=\"100\" VerticalAlignment=\"Top\" Width=\"100\"/>");
+                        break;
+                    case "Button":
+                        CodeTextBox.AppendText("<Button Content=\"Button\" HorizontalAlignment=\"Left\" VerticalAlignment=\"Top\" Width=\"75\"/>");
+                        break;
+                    default:
+                        MessageBox.Show("Something went wrong!","Error",MessageBoxButton.OK,MessageBoxImage.Hand);
+                        break;
+                    
+                }
+            }
         }
     }
 }

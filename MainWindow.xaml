@@ -11,7 +11,6 @@
         <RichTextBox x:Name="CodeTextBox" HorizontalAlignment="Left" Height="355" Margin="165,47,0,0" VerticalAlignment="Top" Width="619" BorderThickness="2" FontFamily="Courier New" PreviewTextInput="CodeTextBox_PreviewTextInput" SelectionBrush="CornflowerBlue" TextChanged="CodeTextBox_TextChanged" xml:space="preserve">
             <FlowDocument/>
         </RichTextBox>
-        <TreeView x:Name="XAMLTreeView" HorizontalAlignment="Left" Height="355" Margin="10,47,0,0" VerticalAlignment="Top" Width="150"/>
         <ToolBar x:Name="MyToolBar" HorizontalAlignment="Left" Height="37" Margin="10,5,0,0" VerticalAlignment="Top" Width="774">
             <Button x:Name="NewButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="New File" Click="NewButton_Click">
                 <StackPanel>
@@ -41,5 +40,68 @@
         </ToolBar>
         <Label Content="Lines: " HorizontalAlignment="Left" Margin="10,400,0,0" VerticalAlignment="Top"/>
         <Label x:Name="Lines" Content="" HorizontalAlignment="Left" Margin="53,402,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="ToolBoxList" HorizontalAlignment="Left" Height="355" Margin="10,47,0,0" VerticalAlignment="Top" Width="150" MouseDoubleClick="ListBox_MouseDoubleClick">
+            <ListBoxItem>Pointer</ListBoxItem>
+            <ListBoxItem>Border</ListBoxItem>
+            <ListBoxItem>Button</ListBoxItem>
+            <ListBoxItem>Calendar</ListBoxItem>
+            <ListBoxItem>Canvas</ListBoxItem>
+            <ListBoxItem>CheckBox</ListBoxItem>
+            <ListBoxItem>ComboBox</ListBoxItem>
+            <ListBoxItem>ContentController</ListBoxItem>
+            <ListBoxItem>DataGrid</ListBoxItem>
+            <ListBoxItem>DatePicker</ListBoxItem>
+            <ListBoxItem>DockPanel</ListBoxItem>
+            <ListBoxItem>DocumentViewer</ListBoxItem>
+            <ListBoxItem>Ellipse</ListBoxItem>
+            <ListBoxItem>Expander</ListBoxItem>
+            <ListBoxItem>Frame</ListBoxItem>
+            <ListBoxItem>Grid</ListBoxItem>
+            <ListBoxItem>GridSplitter</ListBoxItem>
+            <ListBoxItem>GroupBox</ListBoxItem>
+            <ListBoxItem>Image</ListBoxItem>
+            <ListBoxItem>Label</ListBoxItem>
+            <ListBoxItem>ListBox</ListBoxItem>
+            <ListBoxItem>Listview</ListBoxItem>
+            <ListBoxItem>MediaElement</ListBoxItem>
+            <ListBoxItem>Menu</ListBoxItem>
+            <ListBoxItem>PasswordBox</ListBoxItem>
+            <ListBoxItem>ProgressBar</ListBoxItem>
+            <ListBoxItem>RadioButton</ListBoxItem>
+            <ListBoxItem>Rectangle</ListBoxItem>
+            <ListBoxItem>RichTextBox</ListBoxItem>
+            <ListBoxItem>ScrollBar</ListBoxItem>
+            <ListBoxItem>ScrollViewer</ListBoxItem>
+            <ListBoxItem>Separator</ListBoxItem>
+            <ListBoxItem>Slider</ListBoxItem>
+            <ListBoxItem>StackPanel</ListBoxItem>
+            <ListBoxItem>StatusBar</ListBoxItem>
+            <ListBoxItem>TabControl</ListBoxItem>
+            <ListBoxItem>TextBlock</ListBoxItem>
+            <ListBoxItem>TextBox</ListBoxItem>
+            <ListBoxItem>ToolBar</ListBoxItem>
+            <ListBoxItem>ToolBarPanel</ListBoxItem>
+            <ListBoxItem>ToolBarTray</ListBoxItem>
+            <ListBoxItem>TreeView</ListBoxItem>
+            <ListBoxItem>Viewbox</ListBoxItem>
+            <ListBoxItem>WebBrowser</ListBoxItem>
+            <ListBoxItem>WindowsFormsHost</ListBoxItem>
+            <ListBoxItem>WrapPanel</ListBoxItem>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding MySourceItemName}">
+                        <TextBlock.InputBindings>
+                            <MouseBinding MouseAction="LeftDoubleClick"
+                                          Command="{Binding DataContext.MyCommand,RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"
+                                          CommandParameter="{Binding MySourceItemId}" />
+                        </TextBlock.InputBindings>
+                    </TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+
+
+
     </Grid>
 </Window>

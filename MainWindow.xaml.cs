@@ -22,6 +22,7 @@ namespace xaml_notepad
     {
         //public string reserved_words_path= "C:\\Users\\nigbu\\source\\repos\\xaml-notepad\\reserved_words.txt";
         public string filepath=null;
+        public string filename;
         public MainWindow()
         {
             InitializeComponent();
@@ -69,15 +70,17 @@ namespace xaml_notepad
 
         private void SaveAsButton_Click(object sender, RoutedEventArgs e)
         {
-             
-                Microsoft.Win32.SaveFileDialog dg = new Microsoft.Win32.SaveFileDialog();
-                dg.FileName = "new.xaml";
-                dg.DefaultExt = ".xaml";
-                dg.Filter = "eXtensible Markup Language .xaml|*.xaml";
-                Nullable<bool> result = dg.ShowDialog();
+
+            Microsoft.Win32.SaveFileDialog dg = new Microsoft.Win32.SaveFileDialog
+            {
+                FileName = "new.xaml",
+                DefaultExt = ".xaml",
+                Filter = "eXtensible Markup Language .xaml|*.xaml"
+            };
+            Nullable<bool> result = dg.ShowDialog();
                 if (result == true)
                 {
-                    string filename = dg.FileName;
+                    filename = dg.FileName;
                     TextRange range = new TextRange(CodeTextBox.Document.ContentStart, CodeTextBox.Document.ContentEnd);
                     string codelines = range.Text;
                     filepath = Path.GetFullPath(dg.FileName);
@@ -96,7 +99,7 @@ namespace xaml_notepad
            
             if (og.ShowDialog() == true)
             {
-                
+                filename = og.FileName; 
                 FlowDocument content = new FlowDocument(new Paragraph(new Run(File.ReadAllText(og.FileName))));
                 CodeTextBox.Document = content;
                 filepath = Path.GetFullPath(og.FileName);
@@ -111,8 +114,7 @@ namespace xaml_notepad
             MessageBoxResult dr = MessageBox.Show("Would you like to save your file?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question);
             
             if (dr == MessageBoxResult.Yes)
-            {
-                
+            { 
                 SaveAsButton_Click(sender, e);
                 CodeTextBox.Document.Blocks.Clear();
             }
@@ -123,9 +125,11 @@ namespace xaml_notepad
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
 
-            string filename = Path.GetFileName(filepath);
+            
             TextRange range = new TextRange(CodeTextBox.Document.ContentStart, CodeTextBox.Document.ContentEnd);
             string codelines = range.Text;
+            MessageBox.Show("Saving to "+filepath,"Information",MessageBoxButton.OK,MessageBoxImage.Information);
+            
             File.WriteAllText(filename, codelines);
         }
     }

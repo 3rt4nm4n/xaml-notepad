@@ -27,10 +27,10 @@ namespace xaml_notepad
         public MainWindow()
         {
             InitializeComponent();
-            var range = new TextRange(CodeTextBox.Document.ContentStart, CodeTextBox.Document.ContentEnd);
+            /*var range = new TextRange(CodeTextBox.Document.ContentStart, CodeTextBox.Document.ContentEnd);
             string text = range.Text;
             if (text == null)
-                Lines.Content = "0";
+                Lines.Content = "0";*/
         }
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
@@ -63,13 +63,14 @@ namespace xaml_notepad
                 string codelines = range.Text;
                 if ()
             }*/
+            
         }
 
         public static long LineCounter(string s)
         {
             long counter = 1;
             int pos = 0;
-            while ((pos = s.IndexOf('\n', pos)) != -1)
+            while ((pos = s.IndexOf(' ', pos)) != -1)
             {
                 counter += 1;
                 pos += 1;
@@ -82,11 +83,11 @@ namespace xaml_notepad
         {
             //if reserved make it blue
             //CodeTextBox.Selection.ApplyPropertyValue(RichTextBox.ForegroundProperty, Brushes.Blue);
-            var range = new TextRange(CodeTextBox.Document.ContentStart, CodeTextBox.Document.ContentEnd);
+            /*var range = new TextRange(CodeTextBox.Document.ContentStart, CodeTextBox.Document.ContentEnd);
             string text = range.Text;
             long ct = CodeTextBox.Document.Blocks.Count();
             if (ct != 0)
-               Lines.Content = ct.ToString();
+               Lines.Content = ct.ToString();*/
             
             
         }

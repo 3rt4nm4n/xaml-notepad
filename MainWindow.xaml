@@ -38,10 +38,10 @@
                 </StackPanel>
             </Button>
         </ToolBar>
-        <Label Content="Lines: " HorizontalAlignment="Left" Margin="10,402,0,0" VerticalAlignment="Top" Height="33"/>
-        <Label x:Name="Lines" Content="0" HorizontalAlignment="Left" Margin="44,402,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="40" Height="33" >
+        <!--<Label Content="Lines: " HorizontalAlignment="Left" Margin="10,402,0,0" VerticalAlignment="Top" Height="33"/>-->
+        <!--<Label x:Name="Lines" Content="0" HorizontalAlignment="Left" Margin="44,402,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="40" Height="33" />-->
 
-        </Label>
+       
         <ListBox x:Name="ToolBoxList" HorizontalAlignment="Left" Height="355" Margin="10,47,0,0" VerticalAlignment="Top" Width="150" MouseDoubleClick="ListBox_MouseDoubleClick">
             <ListBoxItem ToolTip="Pointer">Pointer</ListBoxItem>
             <ListBoxItem ToolTip="Border">Border</ListBoxItem>
@@ -92,52 +92,6 @@
             <ListBoxItem ToolTip="WrapPanel">WrapPanel</ListBoxItem>
 
         </ListBox>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </Grid>
 </Window>

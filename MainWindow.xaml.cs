@@ -86,7 +86,7 @@ namespace xaml_notepad
             string text = range.Text;
             long ct = CodeTextBox.Document.Blocks.Count();
             if (ct != 0)
-                Lines.Content = ct.ToString();
+               Lines.Content = ct.ToString();
             
             
         }

@@ -43,53 +43,53 @@
 
         </Label>
         <ListBox x:Name="ToolBoxList" HorizontalAlignment="Left" Height="355" Margin="10,47,0,0" VerticalAlignment="Top" Width="150" MouseDoubleClick="ListBox_MouseDoubleClick">
-            <ListBoxItem>Pointer</ListBoxItem>
-            <ListBoxItem>Border</ListBoxItem>
-            <ListBoxItem>Button</ListBoxItem>
-            <ListBoxItem>Calendar</ListBoxItem>
-            <ListBoxItem>Canvas</ListBoxItem>
-            <ListBoxItem>CheckBox</ListBoxItem>
-            <ListBoxItem>ComboBox</ListBoxItem>
-            <ListBoxItem>Comment</ListBoxItem>
-            <ListBoxItem>ContentController</ListBoxItem>
-            <ListBoxItem>DataGrid</ListBoxItem>
-            <ListBoxItem>DatePicker</ListBoxItem>
-            <ListBoxItem>DockPanel</ListBoxItem>
-            <ListBoxItem>DocumentViewer</ListBoxItem>
-            <ListBoxItem>Ellipse</ListBoxItem>
-            <ListBoxItem>Expander</ListBoxItem>
-            <ListBoxItem>Frame</ListBoxItem>
-            <ListBoxItem>Grid</ListBoxItem>
-            <ListBoxItem>GridSplitter</ListBoxItem>
-            <ListBoxItem>GroupBox</ListBoxItem>
-            <ListBoxItem>Image</ListBoxItem>
-            <ListBoxItem>Label</ListBoxItem>
-            <ListBoxItem>ListBox</ListBoxItem>
-            <ListBoxItem>Listview</ListBoxItem>
-            <ListBoxItem>MediaElement</ListBoxItem>
-            <ListBoxItem>Menu</ListBoxItem>
-            <ListBoxItem>PasswordBox</ListBoxItem>
-            <ListBoxItem>ProgressBar</ListBoxItem>
-            <ListBoxItem>RadioButton</ListBoxItem>
-            <ListBoxItem>Rectangle</ListBoxItem>
-            <ListBoxItem>RichTextBox</ListBoxItem>
-            <ListBoxItem>ScrollBar</ListBoxItem>
-            <ListBoxItem>ScrollViewer</ListBoxItem>
-            <ListBoxItem>Separator</ListBoxItem>
-            <ListBoxItem>Slider</ListBoxItem>
-            <ListBoxItem>StackPanel</ListBoxItem>
-            <ListBoxItem>StatusBar</ListBoxItem>
-            <ListBoxItem>TabControl</ListBoxItem>
-            <ListBoxItem>TextBlock</ListBoxItem>
-            <ListBoxItem>TextBox</ListBoxItem>
-            <ListBoxItem>ToolBar</ListBoxItem>
-            <ListBoxItem>ToolBarPanel</ListBoxItem>
-            <ListBoxItem>ToolBarTray</ListBoxItem>
-            <ListBoxItem>TreeView</ListBoxItem>
-            <ListBoxItem>Viewbox</ListBoxItem>
-            <ListBoxItem>WebBrowser</ListBoxItem>
-            <ListBoxItem>WindowsFormsHost</ListBoxItem>
-            <ListBoxItem>WrapPanel</ListBoxItem>
+            <ListBoxItem ToolTip="Pointer">Pointer</ListBoxItem>
+            <ListBoxItem ToolTip="Border">Border</ListBoxItem>
+            <ListBoxItem ToolTip="Button">Button</ListBoxItem>
+            <ListBoxItem ToolTip="Calendar">Calendar</ListBoxItem>
+            <ListBoxItem ToolTip="Canvas">Canvas</ListBoxItem>
+            <ListBoxItem ToolTip="CheckBox">CheckBox</ListBoxItem>
+            <ListBoxItem ToolTip="ComboBox">ComboBox</ListBoxItem>
+            <ListBoxItem ToolTip="Comment">Comment</ListBoxItem>
+            <ListBoxItem ToolTip="ContentController">ContentController</ListBoxItem>
+            <ListBoxItem ToolTip="DataGrid">DataGrid</ListBoxItem>
+            <ListBoxItem ToolTip="DatePicker">DatePicker</ListBoxItem>
+            <ListBoxItem ToolTip="DockPanel">DockPanel</ListBoxItem>
+            <ListBoxItem ToolTip="DocumentViewer">DocumentViewer</ListBoxItem>
+            <ListBoxItem ToolTip="Ellipse">Ellipse</ListBoxItem>
+            <ListBoxItem ToolTip="Expander">Expander</ListBoxItem>
+            <ListBoxItem ToolTip="Frame">Frame</ListBoxItem>
+            <ListBoxItem ToolTip="Grid">Grid</ListBoxItem>
+            <ListBoxItem ToolTip="GridSplitter">GridSplitter</ListBoxItem>
+            <ListBoxItem ToolTip="GroupBox">GroupBox</ListBoxItem>
+            <ListBoxItem ToolTip="Image">Image</ListBoxItem>
+            <ListBoxItem ToolTip="Label">Label</ListBoxItem>
+            <ListBoxItem ToolTip="ListBox">ListBox</ListBoxItem>
+            <ListBoxItem ToolTip="ListView">ListView</ListBoxItem>
+            <ListBoxItem ToolTip="MediaElement">MediaElement</ListBoxItem>
+            <ListBoxItem ToolTip="Menu">Menu</ListBoxItem>
+            <ListBoxItem ToolTip="PasswordBox">PasswordBox</ListBoxItem>
+            <ListBoxItem ToolTip="ProgressBar">ProgressBar</ListBoxItem>
+            <ListBoxItem ToolTip="RadioButton">RadioButton</ListBoxItem>
+            <ListBoxItem ToolTip="Rectangle">Rectangle</ListBoxItem>
+            <ListBoxItem ToolTip="RichTextBox">RichTextBox</ListBoxItem>
+            <ListBoxItem ToolTip="ScrollBar">ScrollBar</ListBoxItem>
+            <ListBoxItem ToolTip="ScrollViewer">ScrollViewer</ListBoxItem>
+            <ListBoxItem ToolTip="Separator">Separator</ListBoxItem>
+            <ListBoxItem ToolTip="Slider">Slider</ListBoxItem>
+            <ListBoxItem ToolTip="StackPanel">StackPanel</ListBoxItem>
+            <ListBoxItem ToolTip="StatusBar">StatusBar</ListBoxItem>
+            <ListBoxItem ToolTip="TabControl">TabControl</ListBoxItem>
+            <ListBoxItem ToolTip="TextBlock">TextBlock</ListBoxItem>
+            <ListBoxItem ToolTip="TextBox">TextBox</ListBoxItem>
+            <ListBoxItem ToolTip="ToolBar">ToolBar</ListBoxItem>
+            <ListBoxItem ToolTip="ToolBarPanel">ToolBarPanel</ListBoxItem>
+            <ListBoxItem ToolTip="ToolBarTray">ToolBarTray</ListBoxItem>
+            <ListBoxItem ToolTip="TreeView">TreeView</ListBoxItem>
+            <ListBoxItem ToolTip="Viewbox">Viewbox</ListBoxItem>
+            <ListBoxItem ToolTip="WebBrowser">WebBrowser</ListBoxItem>
+            <ListBoxItem ToolTip="WindowsFormsHost">WindowsFormsHost</ListBoxItem>
+            <ListBoxItem ToolTip="WrapPanel">WrapPanel</ListBoxItem>
 
         </ListBox>
 

@@ -48,6 +48,7 @@
             <ListBoxItem>Canvas</ListBoxItem>
             <ListBoxItem>CheckBox</ListBoxItem>
             <ListBoxItem>ComboBox</ListBoxItem>
+            <ListBoxItem>Comment</ListBoxItem>
             <ListBoxItem>ContentController</ListBoxItem>
             <ListBoxItem>DataGrid</ListBoxItem>
             <ListBoxItem>DatePicker</ListBoxItem>
@@ -87,19 +88,52 @@
             <ListBoxItem>WebBrowser</ListBoxItem>
             <ListBoxItem>WindowsFormsHost</ListBoxItem>
             <ListBoxItem>WrapPanel</ListBoxItem>
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding MySourceItemName}">
-                        <TextBlock.InputBindings>
-                            <MouseBinding MouseAction="LeftDoubleClick"
-                                          Command="{Binding DataContext.MyCommand,RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"
-                                          CommandParameter="{Binding MySourceItemId}" />
-                        </TextBlock.InputBindings>
-                    </TextBlock>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
+            
         </ListBox>
-        
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

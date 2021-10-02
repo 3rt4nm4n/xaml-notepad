@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:xaml_notepad"
         mc:Ignorable="d"
-        Title="XAML Notepad" Height="460" Width="800" WindowStartupLocation="CenterScreen" Icon="C:\Users\nigbu\source\repos\xaml-notepad\xamlnotepadicon.png" SizeChanged="Window_SizeChanged">
+        Title="XAML Notepad" Height="465" Width="800" WindowStartupLocation="CenterScreen" Icon="C:\Users\nigbu\source\repos\xaml-notepad\xamlnotepadicon.png" SizeChanged="Window_SizeChanged">
 
     <Grid x:Name="myGrid">
         <RichTextBox x:Name="CodeTextBox" HorizontalAlignment="Left" Height="355" Margin="165,47,0,0" VerticalAlignment="Top" Width="619" BorderThickness="2" FontFamily="Courier New" PreviewTextInput="CodeTextBox_PreviewTextInput" SelectionBrush="CornflowerBlue" TextChanged="CodeTextBox_TextChanged" xml:space="preserve">
@@ -38,8 +38,10 @@
                 </StackPanel>
             </Button>
         </ToolBar>
-        <Label Content="Lines: " HorizontalAlignment="Left" Margin="10,400,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Lines" Content="" HorizontalAlignment="Left" Margin="53,402,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lines: " HorizontalAlignment="Left" Margin="10,402,0,0" VerticalAlignment="Top" Height="33"/>
+        <Label x:Name="Lines" Content="0" HorizontalAlignment="Left" Margin="44,402,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="40" Height="33" >
+
+        </Label>
         <ListBox x:Name="ToolBoxList" HorizontalAlignment="Left" Height="355" Margin="10,47,0,0" VerticalAlignment="Top" Width="150" MouseDoubleClick="ListBox_MouseDoubleClick">
             <ListBoxItem>Pointer</ListBoxItem>
             <ListBoxItem>Border</ListBoxItem>
@@ -88,9 +90,9 @@
             <ListBoxItem>WebBrowser</ListBoxItem>
             <ListBoxItem>WindowsFormsHost</ListBoxItem>
             <ListBoxItem>WrapPanel</ListBoxItem>
-            
+
         </ListBox>
-       
+
 
 
 

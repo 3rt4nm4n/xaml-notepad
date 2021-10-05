@@ -27,6 +27,7 @@ namespace xaml_notepad
         public MainWindow()
         {
             InitializeComponent();
+            CodeTextBox.Focus();
             /*var range = new TextRange(CodeTextBox.Document.ContentStart, CodeTextBox.Document.ContentEnd);
             string text = range.Text;
             if (text == null)
@@ -318,5 +319,21 @@ namespace xaml_notepad
                 }
             }
         }
+
+        private void PrintButton_Click(object sender, RoutedEventArgs e)
+        {
+            PrintDialog pd = new PrintDialog();
+            if (pd.ShowDialog()==true)
+            {
+                pd.PrintVisual(CodeTextBox as Visual, "printing the visual");
+                pd.PrintDocument((((IDocumentPaginatorSource)CodeTextBox.Document).DocumentPaginator), "printing as paginator");
+            }
+        }
+
+        private void FindButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+        
     }
 }

@@ -334,6 +334,10 @@ namespace xaml_notepad
         {
             
         }
-        
+
+        private void HelpButton_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://docs.microsoft.com/en-gb/dotnet/desktop/wpf/xaml/?view=netdesktop-5.0");
+        }
     }
 }

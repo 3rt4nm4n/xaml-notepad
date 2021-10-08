@@ -330,10 +330,36 @@ namespace xaml_notepad
             }
         }
 
+        /*
+         public void FindAndReplace(string search, RichTextBox richText)
+        {
+            string txt;
+            TextRange range = new TextRange(richText.Document.ContentStart, richText.Document.ContentEnd);
+            txt = range.Text;
+            if (txt.Contains(search))
+            {
+                MessageBox.Show(search + " is found!","Information",MessageBoxButton.OK,MessageBoxImage.Information);
+            }
+        }
+         */
+
+
         private void FindButton_Click(object sender, RoutedEventArgs e)
         {
             
         }
-        
+
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult mbr = MessageBox.Show("Are you sure about clearing?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if (mbr == MessageBoxResult.Yes)
+            {
+                CodeTextBox.Document.Blocks.Clear();
+            }
+            else
+            {
+
+            }
+        }
     }
 }

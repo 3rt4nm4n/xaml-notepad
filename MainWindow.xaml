@@ -37,17 +37,16 @@
                     <Image Source="C:\Users\nigbu\source\repos\xaml-notepad\find.png" Height="29" Width="29"/>
                 </StackPanel>
             </Button>
+            <Button x:Name="HelpButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="Help">
+                <StackPanel>
+                    <Image Source="C:\Users\nigbu\source\repos\xaml-notepad\question-iconn.png" Height="29" Width="29"/>
+                </StackPanel>
+            </Button>
             <Button x:Name="PrintButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="Print.." Click="PrintButton_Click">
                 <StackPanel>
                     <Image Source="C:\Users\nigbu\source\repos\xaml-notepad\printer-icon.png" Height="29" Width="29"/>
                 </StackPanel>
             </Button>
-            <Button x:Name="HelpButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="Help" Click="HelpButton_Click">
-                <StackPanel>
-                    <Image Source="C:\Users\nigbu\source\repos\xaml-notepad\question-iconn.png" Height="29" Width="29"/>
-                </StackPanel>
-            </Button>
-            
             </ToolBar>
         <!--<Label Content="Lines: " HorizontalAlignment="Left" Margin="10,402,0,0" VerticalAlignment="Top" Height="33"/>-->
         <!--<Label x:Name="Lines" Content="0" HorizontalAlignment="Left" Margin="44,402,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="40" Height="33" />-->

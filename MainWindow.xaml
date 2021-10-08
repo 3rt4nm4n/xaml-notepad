@@ -37,7 +37,7 @@
                     <Image Source="C:\Users\nigbu\source\repos\xaml-notepad\Clear-icon.png" Height="29" Width="29"/>
                 </StackPanel>
             </Button>
-            <Button x:Name="FindButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="Print.." Command="" Click="FindButton_Click">
+            <Button x:Name="FindButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="Find" Command="" Click="FindButton_Click">
                 <StackPanel>
                     <Image Source="C:\Users\nigbu\source\repos\xaml-notepad\find.png" Height="29" Width="29"/>
                 </StackPanel>
@@ -45,6 +45,16 @@
             <Button x:Name="PrintButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="Print.." Click="PrintButton_Click">
                 <StackPanel>
                     <Image Source="C:\Users\nigbu\source\repos\xaml-notepad\printer-icon.png" Height="29" Width="29"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="FontSIncreaseButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="Increase Font Size" Click="FontSIncreaseButton_Click">
+                <StackPanel>
+                    <Image Source="C:\Users\nigbu\source\repos\xaml-notepad\font-size-increase-icon.png" Height="29" Width="29"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="FontSDecreaseButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="Decrease Font Size" Click="FontSDecreaseButton_Click">
+                <StackPanel>
+                    <Image Source="C:\Users\nigbu\source\repos\xaml-notepad\fsdi.png" Height="29" Width="29"/>
                 </StackPanel>
             </Button>
             <Button x:Name="HelpButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,-2,0,-1" Width="49" Height="35" ToolTip="Help">

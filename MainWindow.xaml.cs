@@ -331,7 +331,7 @@ namespace xaml_notepad
         }
 
         /*
-         public void FindAndReplace(string search, RichTextBox richText)
+         public void Find(string search, RichTextBox richText)
         {
             string txt;
             TextRange range = new TextRange(richText.Document.ContentStart, richText.Document.ContentEnd);
@@ -360,6 +360,16 @@ namespace xaml_notepad
             {
 
             }
+        }
+
+        private void FontSDecreaseButton_Click(object sender, RoutedEventArgs e)
+        {
+            CodeTextBox.FontSize -= 1;
+        }
+
+        private void FontSIncreaseButton_Click(object sender, RoutedEventArgs e)
+        {
+            CodeTextBox.FontSize += 1;
         }
     }
 }
